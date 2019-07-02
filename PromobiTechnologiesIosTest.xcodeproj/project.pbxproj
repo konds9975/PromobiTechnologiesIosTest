@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		FF20762422CB10D8001FDB86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20762322CB10D8001FDB86 /* AppDelegate.swift */; };
-		FF20762622CB10D8001FDB86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20762522CB10D8001FDB86 /* ViewController.swift */; };
+		FF20762622CB10D8001FDB86 /* LocationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20762522CB10D8001FDB86 /* LocationListViewController.swift */; };
 		FF20762922CB10D8001FDB86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20762722CB10D8001FDB86 /* Main.storyboard */; };
 		FF20762C22CB10D9001FDB86 /* PromobiTechnologiesIosTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF20762A22CB10D9001FDB86 /* PromobiTechnologiesIosTest.xcdatamodeld */; };
 		FF20762E22CB10DA001FDB86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF20762D22CB10DA001FDB86 /* Assets.xcassets */; };
-		FF20763122CB10DA001FDB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20762F22CB10DA001FDB86 /* LaunchScreen.storyboard */; };
 		FF20763C22CB10DB001FDB86 /* PromobiTechnologiesIosTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20763B22CB10DB001FDB86 /* PromobiTechnologiesIosTestTests.swift */; };
 		FF20764722CB10DB001FDB86 /* PromobiTechnologiesIosTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20764622CB10DB001FDB86 /* PromobiTechnologiesIosTestUITests.swift */; };
+		FF20765522CB1106001FDB86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF20765422CB1106001FDB86 /* LaunchScreen.storyboard */; };
+		FF20765A22CB1626001FDB86 /* LocationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20765922CB1626001FDB86 /* LocationListTableViewCell.swift */; };
+		FF20765D22CB179F001FDB86 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20765C22CB179F001FDB86 /* Extensions.swift */; };
+		FF20765F22CB1ABB001FDB86 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20765E22CB1ABB001FDB86 /* DBManager.swift */; };
+		FF20766122CB3383001FDB86 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20766022CB3383001FDB86 /* Constant.swift */; };
+		FF20766322CB4A3C001FDB86 /* DisplayLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF20766222CB4A3C001FDB86 /* DisplayLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +42,10 @@
 /* Begin PBXFileReference section */
 		FF20762022CB10D8001FDB86 /* PromobiTechnologiesIosTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromobiTechnologiesIosTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF20762322CB10D8001FDB86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF20762522CB10D8001FDB86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF20762522CB10D8001FDB86 /* LocationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewController.swift; sourceTree = "<group>"; };
 		FF20762822CB10D8001FDB86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF20762B22CB10D9001FDB86 /* PromobiTechnologiesIosTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PromobiTechnologiesIosTest.xcdatamodel; sourceTree = "<group>"; };
 		FF20762D22CB10DA001FDB86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FF20763022CB10DA001FDB86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF20763222CB10DA001FDB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF20763722CB10DB001FDB86 /* PromobiTechnologiesIosTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromobiTechnologiesIosTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF20763B22CB10DB001FDB86 /* PromobiTechnologiesIosTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromobiTechnologiesIosTestTests.swift; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		FF20764222CB10DB001FDB86 /* PromobiTechnologiesIosTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromobiTechnologiesIosTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF20764622CB10DB001FDB86 /* PromobiTechnologiesIosTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromobiTechnologiesIosTestUITests.swift; sourceTree = "<group>"; };
 		FF20764822CB10DB001FDB86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF20765422CB1106001FDB86 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF20765922CB1626001FDB86 /* LocationListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListTableViewCell.swift; sourceTree = "<group>"; };
+		FF20765C22CB179F001FDB86 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FF20765E22CB1ABB001FDB86 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		FF20766022CB3383001FDB86 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FF20766222CB4A3C001FDB86 /* DisplayLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				FF20762322CB10D8001FDB86 /* AppDelegate.swift */,
-				FF20762522CB10D8001FDB86 /* ViewController.swift */,
+				FF20765822CB11EC001FDB86 /* Models */,
+				FF20765722CB11E4001FDB86 /* View */,
+				FF20765622CB11B3001FDB86 /* Controllers */,
+				FF20765B22CB1789001FDB86 /* AppUtility */,
 				FF20762722CB10D8001FDB86 /* Main.storyboard */,
 				FF20762D22CB10DA001FDB86 /* Assets.xcassets */,
-				FF20762F22CB10DA001FDB86 /* LaunchScreen.storyboard */,
 				FF20763222CB10DA001FDB86 /* Info.plist */,
-				FF20762A22CB10D9001FDB86 /* PromobiTechnologiesIosTest.xcdatamodeld */,
+				FF20765422CB1106001FDB86 /* LaunchScreen.storyboard */,
 			);
 			path = PromobiTechnologiesIosTest;
 			sourceTree = "<group>";
@@ -126,6 +138,41 @@
 				FF20764822CB10DB001FDB86 /* Info.plist */,
 			);
 			path = PromobiTechnologiesIosTestUITests;
+			sourceTree = "<group>";
+		};
+		FF20765622CB11B3001FDB86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF20762522CB10D8001FDB86 /* LocationListViewController.swift */,
+				FF20766222CB4A3C001FDB86 /* DisplayLocationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FF20765722CB11E4001FDB86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF20765922CB1626001FDB86 /* LocationListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF20765822CB11EC001FDB86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF20762A22CB10D9001FDB86 /* PromobiTechnologiesIosTest.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF20765B22CB1789001FDB86 /* AppUtility */ = {
+			isa = PBXGroup;
+			children = (
+				FF20765C22CB179F001FDB86 /* Extensions.swift */,
+				FF20765E22CB1ABB001FDB86 /* DBManager.swift */,
+				FF20766022CB3383001FDB86 /* Constant.swift */,
+			);
+			path = AppUtility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +243,11 @@
 				TargetAttributes = {
 					FF20761F22CB10D8001FDB86 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					FF20763622CB10DB001FDB86 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -232,7 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF20763122CB10DA001FDB86 /* LaunchScreen.storyboard in Resources */,
+				FF20765522CB1106001FDB86 /* LaunchScreen.storyboard in Resources */,
 				FF20762E22CB10DA001FDB86 /* Assets.xcassets in Resources */,
 				FF20762922CB10D8001FDB86 /* Main.storyboard in Resources */,
 			);
@@ -259,8 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF20762622CB10D8001FDB86 /* ViewController.swift in Sources */,
+				FF20766122CB3383001FDB86 /* Constant.swift in Sources */,
+				FF20765D22CB179F001FDB86 /* Extensions.swift in Sources */,
+				FF20765F22CB1ABB001FDB86 /* DBManager.swift in Sources */,
+				FF20762622CB10D8001FDB86 /* LocationListViewController.swift in Sources */,
+				FF20766322CB4A3C001FDB86 /* DisplayLocationViewController.swift in Sources */,
 				FF20762C22CB10D9001FDB86 /* PromobiTechnologiesIosTest.xcdatamodeld in Sources */,
+				FF20765A22CB1626001FDB86 /* LocationListTableViewCell.swift in Sources */,
 				FF20762422CB10D8001FDB86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,14 +360,6 @@
 				FF20762822CB10D8001FDB86 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FF20762F22CB10DA001FDB86 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF20763022CB10DA001FDB86 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
